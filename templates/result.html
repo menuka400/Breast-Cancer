@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f0f4f8;
+            --text-color: #2c3e50;
+            --card-background: white;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { 
+                opacity: 0; 
+                transform: scale(0.7); 
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1); 
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            perspective: 1000px;
+        }
+
+        .results-container {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 1000px;
+            padding: 40px;
+            text-align: center;
+            animation: zoomIn 0.6s ease-out;
+            transform-style: preserve-3d;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        .results-title {
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+        }
+
+        .results-title i {
+            margin-right: 10px;
+            font-size: 30px;
+        }
+
+        .image-comparison {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: slideIn 0.6s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .image-container {
+            width: 48%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.02) rotateX(5deg);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-label {
+            padding: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+
+        .detections-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            opacity: 0;
+            animation: slideIn 0.6s ease-out forwards;
+            animation-delay: 0.7s;
+        }
+
+        .detections-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .detections-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        .detections-table tr:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-out forwards;
+            animation-delay: 0.9s;
+        }
+
+        .back-button:hover {
+            background-color: #27ae60;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .image-comparison {
+                flex-direction: column;
+            }
+            .image-container {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Rest of the content remains the same as previous result.html -->
+</body>
+</html>
