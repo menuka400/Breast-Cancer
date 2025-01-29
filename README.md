@@ -61,18 +61,12 @@ yolo task=detect mode=train model=yolov8x.pt data=data.yaml epochs=50 imgsz=640 
 ---
 
 ## **📸 Screenshots**  
-| Upload Image  | Detection Result |
-|--------------|-----------------|
-| ![Upload](https://via.placeholder.com/300) | ![Result](https://via.placeholder.com/300) |
+| Detection Result |
+| ![Result](https://via.placeholder.com/300) |
 
 ---
 
 ## **📜 License**  
 This project is **open-source** and available under the **MIT License**.
 
-📢 **Contributions are welcome!** If you have ideas for improvement, feel free to open an issue or a pull request.  
-
----
-
 🔥 **Star this repo** ⭐ if you find it useful!  
-💬 **Let’s connect:** [LinkedIn](https://linkedin.com/) | [Twitter](https://twitter.com/)  
