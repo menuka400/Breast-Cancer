@@ -59,7 +59,6 @@ yolo task=detect mode=train model=yolov8x.pt data=data.yaml epochs=50 imgsz=640 
 👉 Save the trained weights inside the `/models` folder.
 
 ---
----
 
 ## **📜 License**  
 This project is **open-source** and available under the **MIT License**.
