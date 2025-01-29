@@ -63,4 +63,4 @@ yolo task=detect mode=train model=yolov8x.pt data=data.yaml epochs=50 imgsz=640 
 ## **📜 License**  
 This project is **open-source** and available under the **MIT License**.
 
-🔥 **Star this repo** ⭐ if you find it useful!  
+### ⭐ *Star this repository if you like our project!* ⭐
